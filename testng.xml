@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AdminPanelAutomationSuite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="com.srm.framework.listeners.TestListener"/>
+    </listeners>
+    
+
+    <test name="HomeAndForms">
+        <classes>
+            <class name="com.srm.framework.tests.HomeTest"/>
+            <class name="com.srm.framework.tests.FormTests"/>
+        </classes>
+    </test>
+
+    <test name="TablesAndAlerts">
+        <classes>
+            <class name="com.srm.framework.tests.TableTests"/>
+            <class name="com.srm.framework.tests.AlertTests"/>
+        </classes>
+    </test>
+
+    <test name="DynamicAndFrames">
+        <classes>
+            <class name="com.srm.framework.tests.DynamicTests"/>
+            <class name="com.srm.framework.tests.FrameTests"/>
+        </classes>
+    </test>
+</suite>

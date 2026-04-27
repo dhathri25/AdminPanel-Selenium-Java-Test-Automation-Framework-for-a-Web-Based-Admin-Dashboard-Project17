@@ -1,0 +1,23 @@
+
+[
+  {
+    "username": "Tester1",
+    "password": "Password@123",
+    "comments": "Primary form data set for automation coverage.",
+    "fileName": "evidence-one.txt",
+    "checkboxes": ["cb1", "cb3"],
+    "radio": "rd2",
+    "multiSelect": ["Selection Item 2", "Selection Item 4"],
+    "dropdown": "Drop Down Item 5"
+  },
+  {
+    "username": "Tester2",
+    "password": "Password@456",
+    "comments": "Secondary form data set for TestNG data provider coverage.",
+    "fileName": "evidence-two.txt",
+    "checkboxes": ["cb2"],
+    "radio": "rd1",
+    "multiSelect": ["Selection Item 1", "Selection Item 3"],
+    "dropdown": "Drop Down Item 3"
+  }
+]
