@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-AdminPanelAutomationSuite" class="navigator-link">
-              <span class="suite-name border-passed">AdminPanelAutomationSuite</span>
+              <span class="suite-name border-failed">AdminPanelAutomationSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-AdminPanelAutomationSuite" class="navigator-link ">
-                    <span>E:\eclipse\eclipse\AdminPanel\testng.xml</span>
+                    <span>D:\HCL Hackathon 16 Projects\AdminPanel-main\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,   15 passed</span>
+                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AdminPanelAutomationSuite" class="hide-methods failed suite-AdminPanelAutomationSuite"> (hide)</a> <!-- hide-methods failed suite-AdminPanelAutomationSuite -->
+                      <a href="#" panel-name="suite-AdminPanelAutomationSuite" class="show-methods failed suite-AdminPanelAutomationSuite"> (show)</a> <!-- show-methods failed suite-AdminPanelAutomationSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-AdminPanelAutomationSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AdminPanelAutomationSuite" title="com.srm.framework.tests.FrameTests" class="method navigator-link" hash-for-method="shouldAccessIframeContent">shouldAccessIframeContent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AdminPanelAutomationSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,11 +123,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-AdminPanelAutomationSuite" title="com.srm.framework.tests.AlertTests" class="method navigator-link" hash-for-method="shouldAcceptConfirm">shouldAcceptConfirm</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AdminPanelAutomationSuite" title="com.srm.framework.tests.FrameTests" class="method navigator-link" hash-for-method="shouldAccessIframeContent">shouldAccessIframeContent</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -158,12 +167,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AdminPanelAutomationSuite" title="com.srm.framework.tests.FormTests" class="method navigator-link" hash-for-method="shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@7fb13c4)">shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@7fb13c4)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AdminPanelAutomationSuite" title="com.srm.framework.tests.FormTests" class="method navigator-link" hash-for-method="shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@6bdc5861)">shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@6bdc5861)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AdminPanelAutomationSuite" title="com.srm.framework.tests.FormTests" class="method navigator-link" hash-for-method="shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@c487277)">shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@c487277)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AdminPanelAutomationSuite" title="com.srm.framework.tests.FormTests" class="method navigator-link" hash-for-method="shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@5054ca92)">shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@5054ca92)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -188,6 +197,75 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-AdminPanelAutomationSuite" class="panel AdminPanelAutomationSuite">
+          <div class="suite-AdminPanelAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.srm.framework.tests.FrameTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAccessIframeContent">
+                  </a> <!-- shouldAccessIframeContent -->
+                  <span class="method-name">shouldAccessIframeContent</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected iframe content was not interactable. expected [true] but found [false]
+	at com.srm.framework.tests.FrameTests.shouldAccessIframeContent(FrameTests.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Switch into an iframe and verify content is accessible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AdminPanelAutomationSuite-class-failed -->
+          <div class="suite-AdminPanelAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.srm.framework.tests.DynamicTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldFollowRedirect">
+                  </a> <!-- shouldFollowRedirect -->
+                  <span class="method-name">shouldFollowRedirect</span>
+                  <em>
+(Trigger the JavaScript redirect and verify the destination URL changes)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldInteractWithDynamicButton">
+                  </a> <!-- shouldInteractWithDynamicButton -->
+                  <span class="method-name">shouldInteractWithDynamicButton</span>
+                  <em>
+(Interact with a dynamically refreshed button and verify output becomes visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AdminPanelAutomationSuite-class-passed -->
+          <div class="suite-AdminPanelAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.srm.framework.tests.HomeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePage">
+                  </a> <!-- verifyHomePage -->
+                  <span class="method-name">verifyHomePage</span>
+                  <em>
+(Verify the AUT landing page is reachable and behaves like the framework home dashboard)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AdminPanelAutomationSuite-class-passed -->
           <div class="suite-AdminPanelAutomationSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -235,23 +313,6 @@
           <div class="suite-AdminPanelAutomationSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.srm.framework.tests.HomeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHomePage">
-                  </a> <!-- verifyHomePage -->
-                  <span class="method-name">verifyHomePage</span>
-                  <em>
-(Verify the AUT landing page is reachable and behaves like the framework home dashboard)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AdminPanelAutomationSuite-class-passed -->
-          <div class="suite-AdminPanelAutomationSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.srm.framework.tests.TableTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -283,15 +344,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="shouldAccessIframeContent">
-                  </a> <!-- shouldAccessIframeContent -->
-                  <span class="method-name">shouldAccessIframeContent</span>
-                  <em>
-(Switch into an iframe and verify content is accessible)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="shouldAccessNestedFrameContent">
                   </a> <!-- shouldAccessNestedFrameContent -->
                   <span class="method-name">shouldAccessNestedFrameContent</span>
@@ -313,32 +365,6 @@
           <div class="suite-AdminPanelAutomationSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.srm.framework.tests.DynamicTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldFollowRedirect">
-                  </a> <!-- shouldFollowRedirect -->
-                  <span class="method-name">shouldFollowRedirect</span>
-                  <em>
-(Trigger the JavaScript redirect and verify the destination URL changes)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldInteractWithDynamicButton">
-                  </a> <!-- shouldInteractWithDynamicButton -->
-                  <span class="method-name">shouldInteractWithDynamicButton</span>
-                  <em>
-(Interact with a dynamically refreshed button and verify output becomes visible)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AdminPanelAutomationSuite-class-passed -->
-          <div class="suite-AdminPanelAutomationSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.srm.framework.tests.FormTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -353,20 +379,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@7fb13c4)">
-                  </a> <!-- shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@7fb13c4) -->
+                  <a name="shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@6bdc5861)">
+                  </a> <!-- shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@6bdc5861) -->
                   <span class="method-name">shouldSubmitHtmlFormWithValidData</span>
-                  <span class="parameters">(com.srm.framework.model.FormData@7fb13c4)</span>
+                  <span class="parameters">(com.srm.framework.model.FormData@6bdc5861)</span>
                   <em>
 (Submit the HTML form using multiple data sets)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@c487277)">
-                  </a> <!-- shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@c487277) -->
+                  <a name="shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@5054ca92)">
+                  </a> <!-- shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@5054ca92) -->
                   <span class="method-name">shouldSubmitHtmlFormWithValidData</span>
-                  <span class="parameters">(com.srm.framework.model.FormData@c487277)</span>
+                  <span class="parameters">(com.srm.framework.model.FormData@5054ca92)</span>
                   <em>
 (Submit the HTML form using multiple data sets)                  </em>
                 </div> <!-- method-content -->
@@ -376,7 +402,7 @@
         </div> <!-- panel AdminPanelAutomationSuite -->
         <div panel-name="test-xml-AdminPanelAutomationSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\eclipse\eclipse\AdminPanel\testng.xml</span>
+            <span class="header-content">D:\HCL Hackathon 16 Projects\AdminPanel-main\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -451,68 +477,68 @@ data.addRows(15);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'shouldAccessIframeContent')
 data.setCell(0, 2, 'com.srm.framework.tests.FrameTests')
-data.setCell(0, 3, 17648);
+data.setCell(0, 3, 36239);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'shouldSubmitHtmlFormWithValidData')
 data.setCell(1, 2, 'com.srm.framework.tests.FormTests')
-data.setCell(1, 3, 8780);
+data.setCell(1, 3, 12298);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'shouldSubmitHtmlFormWithValidData')
-data.setCell(2, 2, 'com.srm.framework.tests.FormTests')
-data.setCell(2, 3, 7327);
+data.setCell(2, 1, 'shouldFollowRedirect')
+data.setCell(2, 2, 'com.srm.framework.tests.DynamicTests')
+data.setCell(2, 3, 11860);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'shouldFollowRedirect')
-data.setCell(3, 2, 'com.srm.framework.tests.DynamicTests')
-data.setCell(3, 3, 5252);
+data.setCell(3, 1, 'shouldSubmitHtmlFormWithValidData')
+data.setCell(3, 2, 'com.srm.framework.tests.FormTests')
+data.setCell(3, 3, 10316);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'shouldDismissConfirm')
-data.setCell(4, 2, 'com.srm.framework.tests.AlertTests')
-data.setCell(4, 3, 4595);
+data.setCell(4, 1, 'shouldHandleEmptyHtmlFormSubmission')
+data.setCell(4, 2, 'com.srm.framework.tests.FormTests')
+data.setCell(4, 3, 8624);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyHomePage')
-data.setCell(5, 2, 'com.srm.framework.tests.HomeTest')
-data.setCell(5, 3, 4369);
+data.setCell(5, 1, 'shouldAcceptAlert')
+data.setCell(5, 2, 'com.srm.framework.tests.AlertTests')
+data.setCell(5, 3, 7253);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'shouldAcceptAlert')
-data.setCell(6, 2, 'com.srm.framework.tests.AlertTests')
-data.setCell(6, 3, 3458);
+data.setCell(6, 1, 'shouldAccessNestedFrameContent')
+data.setCell(6, 2, 'com.srm.framework.tests.FrameTests')
+data.setCell(6, 3, 6799);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'shouldHandleEmptyHtmlFormSubmission')
-data.setCell(7, 2, 'com.srm.framework.tests.FormTests')
-data.setCell(7, 3, 3270);
+data.setCell(7, 1, 'shouldReturnToDefaultContent')
+data.setCell(7, 2, 'com.srm.framework.tests.FrameTests')
+data.setCell(7, 3, 6484);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'shouldSubmitPrompt')
-data.setCell(8, 2, 'com.srm.framework.tests.AlertTests')
-data.setCell(8, 3, 3254);
+data.setCell(8, 1, 'shouldDisplayStaticTableHeaders')
+data.setCell(8, 2, 'com.srm.framework.tests.TableTests')
+data.setCell(8, 3, 6318);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'shouldAcceptConfirm')
-data.setCell(9, 2, 'com.srm.framework.tests.AlertTests')
-data.setCell(9, 3, 3088);
+data.setCell(9, 1, 'shouldInteractWithDynamicButton')
+data.setCell(9, 2, 'com.srm.framework.tests.DynamicTests')
+data.setCell(9, 3, 6200);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'shouldDisplayStaticTableHeaders')
-data.setCell(10, 2, 'com.srm.framework.tests.TableTests')
-data.setCell(10, 3, 3053);
+data.setCell(10, 1, 'shouldSubmitPrompt')
+data.setCell(10, 2, 'com.srm.framework.tests.AlertTests')
+data.setCell(10, 3, 5721);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'shouldAccessNestedFrameContent')
-data.setCell(11, 2, 'com.srm.framework.tests.FrameTests')
-data.setCell(11, 3, 3041);
+data.setCell(11, 1, 'verifyHomePage')
+data.setCell(11, 2, 'com.srm.framework.tests.HomeTest')
+data.setCell(11, 3, 4817);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'shouldReturnToDefaultContent')
-data.setCell(12, 2, 'com.srm.framework.tests.FrameTests')
-data.setCell(12, 3, 2618);
+data.setCell(12, 1, 'shouldDismissConfirm')
+data.setCell(12, 2, 'com.srm.framework.tests.AlertTests')
+data.setCell(12, 3, 4759);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'shouldRefreshDynamicTableRows')
 data.setCell(13, 2, 'com.srm.framework.tests.TableTests')
-data.setCell(13, 3, 2540);
+data.setCell(13, 3, 3627);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'shouldInteractWithDynamicButton')
-data.setCell(14, 2, 'com.srm.framework.tests.DynamicTests')
-data.setCell(14, 3, 2362);
+data.setCell(14, 1, 'shouldAcceptConfirm')
+data.setCell(14, 2, 'com.srm.framework.tests.AlertTests')
+data.setCell(14, 3, 3429);
 window.suiteTableData['AdminPanelAutomationSuite']= { tableData: data, tableDiv: 'times-div-AdminPanelAutomationSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-AdminPanelAutomationSuite">
               </div> <!-- times-div-AdminPanelAutomationSuite -->
             </div> <!-- times-div -->
@@ -555,217 +581,222 @@ return data;
               <div class="chronological-class-name">com.srm.framework.tests.HomeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyHomePage</span>
-                <span class="method-start">3332 ms</span>
+                <span class="method-start">1912 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.TableTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">shouldDisplayStaticTableHeaders</span>
-                <span class="method-start">3332 ms</span>
+                <span class="method-start">1912 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">6391 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">6728 ms</span>
-              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7708 ms</span>
+                <span class="method-start">6739 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.srm.framework.tests.TableTests</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">shouldRefreshDynamicTableRows</span>
-                <span class="method-start">7945 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.FormTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9173 ms</span>
+                <span class="method-start">7400 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">shouldHandleEmptyHtmlFormSubmission</span>
-                <span class="method-start">9971 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.TableTests</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10487 ms</span>
+                <span class="method-start">8232 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.srm.framework.tests.FormTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldHandleEmptyHtmlFormSubmission</span>
+                <span class="method-start">8239 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.srm.framework.tests.TableTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">8448 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldRefreshDynamicTableRows</span>
+                <span class="method-start">9389 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13016 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.AlertTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">10645 ms</span>
+                <span class="method-start">13318 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldAcceptAlert</span>
-                <span class="method-start">11455 ms</span>
+                <span class="method-start">14021 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.FormTests</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13243 ms</span>
+                <span class="method-start">16866 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">13720 ms</span>
+                <span class="method-start">17597 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@7fb13c4)</span>
-                <span class="method-start">14458 ms</span>
+                <span class="method-name">shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@5054ca92)</span>
+                <span class="method-start">18372 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.AlertTests</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14916 ms</span>
+                <span class="method-start">21278 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">15061 ms</span>
+                <span class="method-start">21561 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldAcceptConfirm</span>
-                <span class="method-start">15779 ms</span>
+                <span class="method-start">22401 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18870 ms</span>
+                <span class="method-start">25834 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">19986 ms</span>
+                <span class="method-start">26085 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldDismissConfirm</span>
-                <span class="method-start">20730 ms</span>
+                <span class="method-start">26816 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.FormTests</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23239 ms</span>
+                <span class="method-start">28690 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">23419 ms</span>
+                <span class="method-start">29058 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@c487277)</span>
-                <span class="method-start">24147 ms</span>
+                <span class="method-name">shouldSubmitHtmlFormWithValidData(com.srm.framework.model.FormData@6bdc5861)</span>
+                <span class="method-start">29758 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.AlertTests</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25326 ms</span>
+                <span class="method-start">31575 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">25481 ms</span>
+                <span class="method-start">31859 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldSubmitPrompt</span>
-                <span class="method-start">26205 ms</span>
+                <span class="method-start">32598 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29461 ms</span>
+                <span class="method-start">38329 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.DynamicTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">30084 ms</span>
+                <span class="method-start">39187 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldFollowRedirect</span>
-                <span class="method-start">30813 ms</span>
+                <span class="method-start">39936 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.FormTests</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31476 ms</span>
+                <span class="method-start">42057 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.DynamicTests</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36066 ms</span>
+                <span class="method-start">51799 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">36369 ms</span>
+                <span class="method-start">52070 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldInteractWithDynamicButton</span>
-                <span class="method-start">37300 ms</span>
+                <span class="method-start">52843 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39664 ms</span>
+                <span class="method-start">59045 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.srm.framework.tests.FrameTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">39946 ms</span>
+                <span class="method-start">59235 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">shouldAccessIframeContent</span>
-                <span class="method-start">40817 ms</span>
+                <span class="method-start">59883 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58466 ms</span>
+                <span class="method-start">96261 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58815 ms</span>
+                <span class="method-start">96481 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldAccessNestedFrameContent</span>
-                <span class="method-start">59649 ms</span>
+                <span class="method-start">97162 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">62692 ms</span>
+                <span class="method-start">103961 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">63019 ms</span>
+                <span class="method-start">104198 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldReturnToDefaultContent</span>
-                <span class="method-start">63848 ms</span>
+                <span class="method-start">104873 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">66466 ms</span>
+                <span class="method-start">111357 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
